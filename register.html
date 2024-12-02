@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Meta Data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    
+        <!-- Title -->
+        <title>Register</title>
+    
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png" />
+    
+        <!-- CSS Libraries -->
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/linearicons.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="assets/css/flaticon.css">
+        <link rel="stylesheet" href="assets/css/slick.css">
+        <link rel="stylesheet" href="assets/css/slick-theme.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/bootsnav.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+    
+        <!-- Custom Styling -->
+        <style>
+            body {
+                font-family: 'Poppins', sans-serif;
+                background-color: #f9f9f900;
+                margin: 0;
+                padding: 0;
+            }
+            .welcome-hero {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                min-height: 100vh;
+            }
+            .welcome-hero-txt {
+                background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+                color: #ffffff;
+                padding: 30px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                max-width: 560px;
+                width: 100%;
+            }
+            .welcome-hero-txt h2 {
+                font-size: 3.5rem;
+                color: #ffffff;
+                margin-bottom: 15px;
+            }
+            .welcome-hero-txt p {
+                font-size: 1.5rem;
+                color: #ffffff;
+                margin-bottom: 20px;
+            }
+            form {
+                margin: 20px 0;
+            }
+            input[type="text"], input[type="password"] {
+                width: 90%;
+                padding: 10px;
+                margin: 10px 0;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                font-size: 1.7rem; /* Increased font size */
+                color: black; /* Set text color to black */
+                background-color: #fff; /* White background for inputs */
+            }
+            
+            input[type="submit"] {
+                background-color: #4CAF50;
+                color: rgb(255, 255, 255);
+                padding: 10px 20px;
+                margin: 10px 0;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 1.5rem;
+                transition: background-color 0.3s;
+            }
+            input[type="submit"]:hover {
+                background-color: #45a049;
+            }
+            label {
+                font-size: 1.9rem; /* Increased font size for labels */
+                color: #ffffff; /* Optional: Ensure label text is white */
+                margin-bottom: 1px; /* Space between label and input field */
+                display: block; /* Make label a block element for better spacing */
+            }
+            
+        </style>
+    </head>
+    <body>
+        <section id="home" class="welcome-hero">
+            <div class="welcome-hero-txt">
+                <h2>Register</h2>
+                <form action="register.php" method="POST">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required><br>
+            
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" required><br>
+    
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required><br>
+    
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required><br>
+            
+                    <input type="submit" value="Register" class="btn" />
+                </form>
+                <!-- Back to Login Button -->
+                <form action="login.html" method="post">     
+                    <input type="submit" value="Back to Login" class="btn" />
+                </form>
+                <!-- Register as Administrator Button -->
+                <form action="register_Admin.html" method="post">     
+                    <input type="submit" value="Register as Administrator" class="btn" />
+                </form>
+            </div>
+        </section>
+    </body>
+    
+</html>
+
